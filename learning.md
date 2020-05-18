@@ -30,7 +30,7 @@ We strongly recommend ***Notepad++***.
 Set `UTF-8` as encode of files.
 
  `git add README.md`means submit file into Stage (Index).
- 
+
  `git commit -m "add new README.md"` means commit Index into Repository.
 `-m` message
  ![three-trees-relationship](https://i.loli.net/2020/02/10/ZzAfnHb3JXcrgNR.png)
@@ -116,3 +116,4 @@ git自动给dev分支做了一次提交
 
 
 
+同步git出现问题
