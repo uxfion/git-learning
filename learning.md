@@ -113,7 +113,3 @@ git自动给dev分支做了一次提交
 `git push origin dev`推送dev分支
 
 当你的小伙伴从远程库clone时，默认情况下，你的小伙伴只能看到本地的master分支。
-
-
-
-同步git出现问题
