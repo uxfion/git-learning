@@ -113,3 +113,38 @@ git自动给dev分支做了一次提交
 `git push origin dev`推送dev分支
 
 当你的小伙伴从远程库clone时，默认情况下，你的小伙伴只能看到本地的master分支。
+
+
+
+## Tag
+
+### 本地Tag
+
+- 命令`git tag <tagname>`用于新建一个标签，默认为`HEAD`，也可以指定一个commit id；
+- 命令`git tag -a <tagname> -m "blablabla..."`可以指定标签信息；
+- 命令`git tag`可以查看所有标签。
+
+```
+$ git tag v1.0
+$ git tag v0.9 f52c633
+$ git tag -a <tagname> -m "blablabla..."
+$ git tag -a v1.0 -m "第一次发板，串口芯片" af445a6a
+```
+
+### 远端Tag
+
+git push并不会把tag标签传送到远端服务器上，只有通过显式命令才能分享标签到远端仓库。
+
+- push单个tag，命令格式为：git push origin <tagname>
+	例如：
+	
+	```
+	$ git push origin v1.0	#将本地v1.0的tag推送到远端服务器
+	```
+	
+- push所有tag，命令格式为：git push <origin>  --tags
+	例如：
+	```
+	$ git push --tags
+	$ git push origin --tags
+	```
